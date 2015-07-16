@@ -6,19 +6,17 @@
   "directories": {
     "test": "test"
   },
-
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "author": "david-rosson-and-eric-le",
-  "license": "ISC",
-  "engines": {
-    "node": "0.12.x"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@heroku.com:peaceful-ocean-8650.git"
-  }
+    "url": "https://github.com/leeric92/2015-06-mytunes.git"
+  },
+  "author": "David Rosson & Eric Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeric92/2015-06-mytunes/issues"
+  },
+  "homepage": "https://github.com/leeric92/2015-06-mytunes"
 }
