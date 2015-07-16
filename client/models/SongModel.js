@@ -5,7 +5,8 @@ var SongModel = Backbone.Model.extend({
     artist: 'artist',
     title: 'title',
     url: 'url',
-    playCount : 0
+    playCount : 0,
+    img_url: 'img_url'
   },
 
   play: function(){

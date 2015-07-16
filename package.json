@@ -1,0 +1,24 @@
+{
+  "name": "mytune-app",
+  "version": "1.0.1",
+  "description": "my first myTune app -  David & Eric",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "david-rosson-and-eric-le",
+  "license": "ISC",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:peaceful-ocean-8650.git"
+  }
+}
