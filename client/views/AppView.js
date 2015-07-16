@@ -12,24 +12,24 @@ var AppView = Backbone.View.extend({
       this.playerView.setSong(model.get('currentSong'));
     }, this);
 
-    var player = this.playerView;
-    var app = this.model;
+    // var player = this.playerView;
+    // var app = this.model;
 
-    this.playerView.on('next', function () {
+    // this.playerView.on('next', function () {
 
-      var songs = app.get('library').models;
-      var currSong = player.model;
-      var currURL = currSong.get('url');
-      var itemURL;
+    //   var songs = app.get('library').models;
+    //   var currSong = player.model;
+    //   var currURL = currSong.get('url');
+    //   var itemURL;
 
-      for (var i=0; i<songs.length; i++) {
-        itemURL = songs[i].get('url');
-        if (itemURL === currURL) {
-          player.setSong(songs[i+1]);          
-        }
-      }
+    //   for (var i=0; i<songs.length; i++) {
+    //     itemURL = songs[i].get('url');
+    //     if (itemURL === currURL) {
+    //       player.setSong(songs[i+1]);          
+    //     }
+    //   }
 
-    });
+    // });
 
   },
 

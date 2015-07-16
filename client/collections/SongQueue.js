@@ -19,11 +19,25 @@ var SongQueue = Songs.extend({
   		}
   	});
 
+    // this.on("ended", function(){
+    //   if(this.length > 1){
+    //     this.ended();
+    //     this.playFirst();
+    //   } else{
+    //     this.ended();
+    //   }
+    // });
+
   },
 
   playFirst: function(){
   	// this.trigger('first');
   	this.at(0).play();
-  }
+  },
+
+  ended: function(){
+    this.shift();
+    this.length && this.playFirst();
+  },
 
 });
