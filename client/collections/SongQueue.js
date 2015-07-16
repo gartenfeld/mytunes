@@ -21,8 +21,9 @@ var SongQueue = Songs.extend({
   	}, this);
 
     this.on('movetotop', function(song){
-      console.log('movetotop');
-
+      this.unshift(new SongModel(song.attributes));
+      this.remove(song);
+      this.playFirst();
     }, this)
 
   },

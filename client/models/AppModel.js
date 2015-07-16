@@ -24,9 +24,9 @@ var AppModel = Backbone.Model.extend({
     //     this.get('songQueue').playFirst();
     //   }
     // }, this);
-      console.log('enqueue triggered', song)
+      // console.log('enqueue triggered', song)
       this.get('songQueue').add(song);
-      console.log(this.get('songQueue'))
+      // console.log(this.get('songQueue'))
     }, this);
 
 
