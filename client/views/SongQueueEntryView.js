@@ -10,7 +10,7 @@ var SongQueueEntryView = Backbone.View.extend({
       // should not dequeue
       // but move the song to the top of queue 
       // and play it
-      this.model.movetotop();
+      this.model.jump();
       // console.log(this.get('songQueue')
     }
   },

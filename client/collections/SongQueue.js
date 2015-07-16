@@ -20,11 +20,11 @@ var SongQueue = Songs.extend({
   		}
   	}, this);
 
-    this.on('movetotop', function(song){
-      this.unshift(new SongModel(song.attributes));
+    this.on('jump', function(song){
       this.remove(song);
+      this.unshift(song);
       this.playFirst();
-    }, this)
+    }, this);
 
   },
 

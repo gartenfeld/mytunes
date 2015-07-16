@@ -24,7 +24,7 @@ var SongModel = Backbone.Model.extend({
     this.trigger('ended', this);
   },
 
-  movetotop: function(){
-    this.trigger('movetotop', this);
+  jump: function(){
+    this.trigger('jump', this);
   }
 });
