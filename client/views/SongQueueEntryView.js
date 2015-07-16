@@ -7,11 +7,7 @@ var SongQueueEntryView = Backbone.View.extend({
 
   events: {
     'click' : function(){
-      // should not dequeue
-      // but move the song to the top of queue 
-      // and play it
       this.model.jump();
-      // console.log(this.get('songQueue')
     }
   },
 
