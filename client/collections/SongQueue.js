@@ -21,9 +21,13 @@ var SongQueue = Songs.extend({
   	}, this);
 
     this.on('jump', function(song){
-      this.remove(song);
-      this.unshift(song);
-      this.playFirst();
+      if(this.at(0) === song){
+        
+      }else{
+        this.remove(song);
+        this.unshift(song);  
+        this.playFirst();
+      }
     }, this);
 
   },
