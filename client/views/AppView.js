@@ -10,6 +10,14 @@ var AppView = Backbone.View.extend({
     // ONLY receive change events for the specific property, 'currentSong'
     this.model.on('change:currentSong', function(model){
       this.playerView.setSong(model.get('currentSong'));
+
+    var imgURL = this.model.get('currentSong').get('img_url');
+    var backgroundImageStyleProperty = "url('img/" + imgURL + "')";
+
+    $body.css({
+      'background-image': backgroundImageStyleProperty
+    });
+
     }, this);
 
   },

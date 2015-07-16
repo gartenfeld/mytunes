@@ -1,12 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:600,200);
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,400,200);
 
 body {
   background-image: url('../img/12.jpg');
   background-size: 100%;
+  -webkit-transition: background-image 1s;
+  transition: background-image 1s;
 }
 
 .stage {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   width: 400px;
   margin: 10% auto;
@@ -15,7 +17,7 @@ body {
 
 #library, #queue {
   font-size: 100%;
-  font-weight: 200;
+  font-weight: 400;
   font-family: 'Raleway', sans-serif;
 }
 

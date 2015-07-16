@@ -13,7 +13,10 @@ var SongModel = Backbone.Model.extend({
     // Triggering an event here will also trigger the event on the collection
     this.trigger('play', this);
     this.set('playCount', this.get('playCount') + 1);
-    console.log('play!')
+    // this.set('img_url', this.get('img_url') + 1)
+
+
+
 
   },
 
