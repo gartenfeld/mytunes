@@ -12,6 +12,13 @@ var PlayerView = Backbone.View.extend({
     });
   },
 
+  //ADDED
+  events: {
+    'ended': function() {
+      this.model.dequeue();
+    }
+  },
+
   setSong: function(song){
     this.model = song;
     this.render();
