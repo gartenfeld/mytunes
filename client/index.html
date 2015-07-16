@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+
+  <head>
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
   <body>
     <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
      below them until after the scripts load-->
@@ -20,6 +25,10 @@
     <script src="views/AppView.js"></script>
     <script src="views/SongQueueView.js"></script>
     <script src="views/SongQueueEntryView.js"></script>
+
+    <div class="stage">
+    </div>
+
     <script>
       $(function(){
         // set up model objects
@@ -30,7 +39,7 @@
         var appView = new AppView({model: app});
 
         // put the view onto the screen
-        $('body').append(appView.render());
+        $('.stage').append(appView.render());
       });
     </script>
   </body>

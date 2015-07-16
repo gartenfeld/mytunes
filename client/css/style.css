@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,200);
+
+body {
+  background-image: url('../img/12.jpg');
+  background-size: 100%;
+}
+
+.stage {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 400px;
+  margin: 10% auto;
+  padding: 20px 10px 30px 40px;
+}
+
+#library, #queue {
+  font-size: 100%;
+  font-weight: 200;
+  font-family: 'Raleway', sans-serif;
+}
+
+.heading {
+  font-size: 120%;
+  font-weight: 600;
+}
+
+#player {
+  width: 360px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}

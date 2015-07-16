@@ -2,42 +2,38 @@
 var SongQueue = Songs.extend({
 
   initialize: function(){
+
   	this.on('add', function(){
   		if(this.length === 1){
   			this.playFirst();
   		}
-  	});
+  	}, this);
 
   	this.on('dequeue', function(song){
   		this.remove(song);
-  	});
+  	}, this);
 
   	this.on('ended', function(){
   		this.shift();
-  		if(this.length >= 1){
+  		if(this.length){
   			this.playFirst();
   		}
-  	});
+  	}, this);
 
-    // this.on("ended", function(){
-    //   if(this.length > 1){
-    //     this.ended();
-    //     this.playFirst();
-    //   } else{
-    //     this.ended();
-    //   }
-    // });
+    this.on('movetotop', function(song){
+      console.log('movetotop');
+
+    }, this)
 
   },
 
   playFirst: function(){
-  	// this.trigger('first');
   	this.at(0).play();
   },
 
   ended: function(){
     this.shift();
     this.length && this.playFirst();
-  },
+  }
 
 });
